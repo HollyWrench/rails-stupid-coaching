@@ -1,0 +1,13 @@
+<h3>Question:</h3>
+<h2><%= "--> #{params[:question]}" %></h2>
+<h4 class="tab">-- You</h2>
+<h3>Answer:</h3>
+<h2><%= "--> #{@answer}" %></h2>
+<h4 class="tab">-- Your coach</h2>
+
+<%# Add a link to /ask on the answer.html.erb view using the link_to Rails helper.
+ %>
+<%= link_to '--> Ask a new question <--', ask_path%>
+<%# The answer.html.erb will display the question you ask your
+coach as well as his answer. The controller will need to read the question
+from params and compute an instance variable @answer for the view to display. %>
